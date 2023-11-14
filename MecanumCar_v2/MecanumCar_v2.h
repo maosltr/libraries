@@ -29,10 +29,10 @@ public:
 	mecanumCar(int _sda, int _scl);
 	void Init();
 	void Stop();
-	void Advance();
-	void Back();
-	void Turn_Left();
-	void Turn_Right();
+	void Advance(int UL, int LL, int UR, int LR);
+	void Back(int UL, int LL, int UR, int LR);
+	void Turn_Left(int UL, int LL, int UR, int LR);
+	void Turn_Right(int UL, int LL, int UR, int LR);
 	void L_Move();
 	void R_Move();
 	void LU_Move();

@@ -32,36 +32,36 @@ void mecanumCar::Stop()
   Motor_Lower_R(0, 0);
 }
 
-void mecanumCar::Advance()
+void mecanumCar::Advance(int UL, int LL, int UR, int LR)
 {
-  Motor_Upper_L(1, speed_Upper_L);
-  Motor_Lower_L(1, speed_Lower_L);
-  Motor_Upper_R(1, speed_Upper_R);
-  Motor_Lower_R(1, speed_Lower_R);
+  Motor_Upper_L(1, UL);
+  Motor_Lower_L(1, LL);
+  Motor_Upper_R(1, UR);
+  Motor_Lower_R(1, LR);
 }
 
-void mecanumCar::Back()
+void mecanumCar::Back(int UL, int LL, int UR, int LR)
 {
-  Motor_Upper_L(0, speed_Upper_L);
-  Motor_Lower_L(0, speed_Lower_L);
-  Motor_Upper_R(0, speed_Upper_R);
-  Motor_Lower_R(0, speed_Lower_R);
+  Motor_Upper_L(0, UL);
+  Motor_Lower_L(0, LL);
+  Motor_Upper_R(0, UR);
+  Motor_Lower_R(0, LR);
 }
 
-void mecanumCar::Turn_Left()
+void mecanumCar::Turn_Left(int UL, int LL, int UR, int LR)
 {
-  Motor_Upper_L(0, speed_Upper_L);
-  Motor_Lower_L(0, speed_Lower_L);
-  Motor_Upper_R(1, speed_Upper_R);
-  Motor_Lower_R(1, speed_Lower_R);
+  Motor_Upper_L(0, UL);
+  Motor_Lower_L(0, LL);
+  Motor_Upper_R(1, UR);
+  Motor_Lower_R(1, LR);
 }
 
-void mecanumCar::Turn_Right()
+void mecanumCar::Turn_Right(int UL, int LL, int UR, int LR)
 {
-  Motor_Upper_L(1, speed_Upper_L);
-  Motor_Lower_L(1, speed_Lower_L);
-  Motor_Upper_R(0, speed_Upper_R);
-  Motor_Lower_R(0, speed_Lower_R);
+  Motor_Upper_L(1, UL);
+  Motor_Lower_L(1, LL);
+  Motor_Upper_R(0, UR);
+  Motor_Lower_R(0, LR);
 }
 
 void mecanumCar::L_Move()
